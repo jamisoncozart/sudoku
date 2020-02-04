@@ -11,5 +11,13 @@ export function Row() {
 }
 
 export function noRepeat(numArray) {
-  return false;
+  for(var i = 0; i < numArray.length; i++) {
+    var currentNum = numArray[i];
+    for(var x = 0; x < numArray.length; x++) {
+      if(currentNum === numArray[x] && x !== i) {
+        return false;
+      }
+    }
+  }
+  return true;
 }

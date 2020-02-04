@@ -20,4 +20,7 @@ describe('Sudoku', () => {
   test('should check that noRepeat() returns false when given an array that contains repeated numbers', () => {
     expect(noRepeat([0,0,0,0,0,0,0,0,0])).toEqual(false);
   })
+  test('should check that noRepeat() returns true when given an array that contains no repeated numbers', () => {
+    expect(noRepeat([0,1,2,3,4,5,6,7,8])).toEqual(true);
+  })
 })
