@@ -11,4 +11,10 @@ describe('Sudoku', () => {
     var row1 = new Row();
     expect(row1.values).toEqual(["", "", "", "", "", "", "", "", ""]);
   })
+  test('should add a new row to Board.rows array when the add.Row() method is called', () => {
+    var board = new Board();
+    var row = new Row();
+    board.addRow(row);
+    expect(board.rows[0]).toEqual(row);
+  })
 })
