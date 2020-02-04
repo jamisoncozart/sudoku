@@ -1,6 +1,6 @@
 import { Board } from "./../src/sudoku.js";
 import { Row } from "./../src/sudoku.js";
-import { exportAllDeclaration } from "@babel/types";
+import { noRepeat } from "./../src/sudoku.js";
 
 describe('Sudoku', () => {
   test('should correctly create a board object with an empty rows array', () => {
