@@ -7,5 +7,5 @@ Board.prototype.addRow = function(row) {
 }
 
 export function Row() {
-//   this.values = ["", "", "", "", "", "", "", "", ""];
+  this.values = ["", "", "", "", "", "", "", "", ""];
 }
