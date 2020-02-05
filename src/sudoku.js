@@ -6,12 +6,13 @@ Board.prototype.addRow = function(row) {
   this.rows.push(row);
 }
 
-// Board.prototype.getCol = function(index) {
-//   var column = [];
-//   this.rows.forEach(function(row) {
-//     column.push(row[index])
-//   })
-// }
+Board.prototype.getCol = function(index) {
+  var column = [];
+  this.rows.forEach(function(row) {
+    column.push(row.values[index]);
+  })
+  return column;
+}
 
 export function Row() {
   this.values = [0,0,0,0,0,0,0,0,0];
